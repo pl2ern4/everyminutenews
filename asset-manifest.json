@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/everyminutenews/static/css/main.c76f207c.chunk.css",
+    "main.js": "/everyminutenews/static/js/main.cc527896.chunk.js",
+    "main.js.map": "/everyminutenews/static/js/main.cc527896.chunk.js.map",
+    "runtime-main.js": "/everyminutenews/static/js/runtime-main.ba48f52c.js",
+    "runtime-main.js.map": "/everyminutenews/static/js/runtime-main.ba48f52c.js.map",
+    "static/css/2.06382735.chunk.css": "/everyminutenews/static/css/2.06382735.chunk.css",
+    "static/js/2.c40958c1.chunk.js": "/everyminutenews/static/js/2.c40958c1.chunk.js",
+    "static/js/2.c40958c1.chunk.js.map": "/everyminutenews/static/js/2.c40958c1.chunk.js.map",
+    "static/js/3.4c46b7ef.chunk.js": "/everyminutenews/static/js/3.4c46b7ef.chunk.js",
+    "static/js/3.4c46b7ef.chunk.js.map": "/everyminutenews/static/js/3.4c46b7ef.chunk.js.map",
+    "index.html": "/everyminutenews/index.html",
+    "static/css/2.06382735.chunk.css.map": "/everyminutenews/static/css/2.06382735.chunk.css.map",
+    "static/css/main.c76f207c.chunk.css.map": "/everyminutenews/static/css/main.c76f207c.chunk.css.map",
+    "static/js/2.c40958c1.chunk.js.LICENSE.txt": "/everyminutenews/static/js/2.c40958c1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba48f52c.js",
+    "static/css/2.06382735.chunk.css",
+    "static/js/2.c40958c1.chunk.js",
+    "static/css/main.c76f207c.chunk.css",
+    "static/js/main.cc527896.chunk.js"
+  ]
+}
