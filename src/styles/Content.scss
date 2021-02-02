@@ -12,6 +12,22 @@ $divider-color: #e4e4e4;
 $today-bg-color: #fff9c4;
 @import "../../node_modules/@y0c/react-datepicker/assets/styles/_mixin.scss";
 @import "../../node_modules/@y0c/react-datepicker/assets/styles/app.scss";
+
+@media only screen and (max-width: 480px) {
+    .calendar{
+      left:0!important;
+      top:3rem!important;
+    }
+    .content{
+        top:15%!important;
+        position: relative;
+        margin-left: unset!important;
+    }
+    .filter{
+        padding: 1rem;
+    }
+}
+
 .content{
     position: fixed;
     height: calc(100% - 20vmin);
@@ -135,5 +151,4 @@ $today-bg-color: #fff9c4;
     border-radius: 50%;
     background-color: white;
   }  
-
 

@@ -7,6 +7,7 @@
     position: fixed;
     display:flex;
     vertical-align: middle;
+   
     .headerStyle{
         color: #f2f2f2;
         text-align: center;
@@ -94,32 +95,23 @@
   }
   @media (max-width: 520px) { 
     .header { 
-        span,a,form{
-            float: left;
-            overflow-y: scroll;
+        white-space: nowrap;
+        height: 6rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* [3] */
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        span{
+            width:33.33%;
         }
-        height: 5rem;
-        overflow-y: scroll;
-        overflow: unset;
-        // display: block;
-        margin: unset;
-        // apply other styles to
-        // span:nth-of-type(1){
-        //     // position: absolute;
-        //     // width:20%;
-        //     // float: left;
-        // }
-        // span:nth-of-type(2){
-        //     position: relative;
-        // }
-        // input{
-        //     width: 80%;
-        // }
-        // button{
-        //     width: 20%;
-        // }
-        // a{
-        //     width:50%;
-        // }
+        span,.country-wrapper{
+            white-space: break-spaces;
+        }
+        .country-wrapper{
+            width:20%;
+            margin:0 3rem;
+        }
+        form{
+            width:5rem;
+        }
     }
 }

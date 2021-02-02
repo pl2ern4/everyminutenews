@@ -1,7 +1,7 @@
 import {createContext, useEffect, useReducer} from 'react';
-import applicationReducer from'./reducer';
-import {fetchData} from '../utility/service';
-import {TOPSTORIES, publishedAt} from "../utility/constant"
+import applicationReducer from'src/context/reducer';
+import {fetchData} from 'src/utility/service';
+import {TOPSTORIES, publishedAt} from "src/utility/constant"
 
 const ApplicationState = createContext();
 const ApplicationDispatch = createContext();

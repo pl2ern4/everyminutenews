@@ -1,8 +1,8 @@
-import {ApplicationContext} from "./context/ApplicationContext";
-import HeaderComponent from "./component/HeaderComponent";
-import ContentComponent from "./component/ContentComponent";
+import {ApplicationContext} from "src/context/ApplicationContext";
+import HeaderComponent from "src/component/HeaderComponent";
+import ContentComponent from "src/component/ContentComponent";
 
-import './styles/index.scss';
+import 'src/styles/index.scss';
 
 function App() {
   return (

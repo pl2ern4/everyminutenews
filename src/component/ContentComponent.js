@@ -1,7 +1,7 @@
-import { useContext, useEffect, useState } from 'react';
-import {ApplicationState, ApplicationDispatch} from '../context/ApplicationContext';
-import FilterComponent from './FilterComponent';
-import NewsContentComponent from './NewsContentComponent';
+import { useContext, useState } from 'react';
+import {ApplicationState, ApplicationDispatch} from 'src/context/ApplicationContext';
+import FilterComponent from 'src/component/FilterComponent';
+import NewsContentComponent from 'src/component/NewsContentComponent';
 
 const ContentComponent = () =>{
 

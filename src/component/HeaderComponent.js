@@ -1,9 +1,9 @@
 import { useRef, useLayoutEffect, useContext } from 'react';
-import {ApplicationState, ApplicationDispatch} from '../context/ApplicationContext';
-import {TOPSTORIES, ALLSTORIES} from "../utility/constant"
+import {ApplicationState, ApplicationDispatch} from 'src/context/ApplicationContext';
+import {TOPSTORIES, ALLSTORIES} from "src/utility/constant"
  
-import countryList from '../utility/countrylist.json';
-import {fetchData} from '../utility/service'
+import countryList from 'src/utility/countrylist.json';
+import {fetchData} from 'src/utility/service'
 
 const HeaderComponent = () => {
     const {activeLink, date, country} = useContext(ApplicationState);
