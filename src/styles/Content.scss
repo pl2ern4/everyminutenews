@@ -1,0 +1,139 @@
+$base-font-size: 12px;
+$title-font-size: 1.3em;
+
+$primary-color-dark: #e64a19;
+$primary-color: orange;
+$primary-color-light: #ffccbc;
+$primary-color-text: #ffffff;
+$accent-color: #ff5252;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #e4e4e4;
+$today-bg-color: #fff9c4;
+@import "../../node_modules/@y0c/react-datepicker/assets/styles/_mixin.scss";
+@import "../../node_modules/@y0c/react-datepicker/assets/styles/app.scss";
+.content{
+    position: fixed;
+    height: calc(100% - 20vmin);
+    overflow-y: auto;
+    top: 10%;
+    margin-left: 1rem;
+    .filter{
+        width: 100%;
+        display: flex;
+        margin: 1rem 1rem 1rem 0;
+        .menu{
+            width:33.33%;
+        }
+
+        .result-count{
+            align-self: center;
+        }
+        .calendar{
+            display: inline-block;
+            background: white;
+            font-size: 12px;
+            position: absolute;
+            left: 42rem;
+            top: 3rem;
+            z-index: 999;
+            
+            &.hide{
+                display: none;
+            }
+            &-wrapper{
+                float: left;
+                button.date-open{
+                    border-radius: 1rem;
+                    border: 0.1rem solid #585555;
+                    height: 2rem;
+                    background-color: orange;
+                    color: white;
+                    cursor: pointer;
+                    &:focus, &:hover{
+                        background-color: #e6990b;
+                    }
+                }
+            }
+        }
+    }
+    .no-news{
+        transform: translate(40%, 51%);
+    }
+    &.hidden{
+        overflow: hidden;
+        width: 100%;
+    }
+    .card {
+        margin: 1rem 1rem;
+        padding: 1rem 2rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        a{
+            text-decoration: none;
+        }
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        h3{
+            margin:1vmin 0 0 0;
+            color: #3c3b3b;
+            
+        }
+        p{
+            margin: 1vmin 0;
+            font-size: 20px;
+            color: black;
+            &:nth-of-type(1){
+                word-break: break-all;
+                text-overflow: ellipsis;
+            }
+            &:nth-of-type(2){
+                font-size: 10px;
+            }
+            span{
+                margin-right:2vmax;
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(359deg);
+    }
+  }
+  .spinner-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .circle-border {
+    width: 5rem;
+    height: 5rem;
+    top:50%;
+    left:50%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(105, 48, 1);
+    background: linear-gradient(0deg, rgba(245, 152, 32, 0.1) 33%, orange 100%);
+    animation: spin .8s linear 0s infinite;
+  }
+  .circle-core {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: white;
+  }  
+
+

@@ -1,0 +1,125 @@
+.header {
+    background-color: orange;
+    overflow: hidden;
+    width:100%;
+    left:0;
+    top:0;
+    position: fixed;
+    display:flex;
+    vertical-align: middle;
+    .headerStyle{
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    form{
+        min-width:40%;
+        align-self: center;      
+        text-align: center;
+        div{
+            vertical-align: middle;
+            height: 2.5rem;
+        }
+        input{
+            height: 100%;
+            border-right: none;
+            border-bottom-left-radius: 7px;
+            border-top-left-radius: 7px;
+            width:80%;
+        }
+        
+        button{
+            height: 100%;
+            border-left: none;
+            border-bottom-right-radius: 7px;
+            border-top-right-radius: 7px;
+            cursor: pointer;
+        }
+        input,button{
+            border: 0.1rem solid grey;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .country-wrapper{
+        background-color: inherit;
+        color:white;
+        font-size: inherit;
+        align-self: center;
+        width:10rem;
+        select{
+            border: unset;
+            background-color: inherit;
+            color: white;
+            font-size: inherit;
+            width: 4rem;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            cursor: pointer;
+        }
+    }
+    span{
+        @extend .headerStyle;
+        &:nth-of-type(1){
+            font-weight: 800;
+        }   
+    }
+    a{
+        @extend .headerStyle;
+        float: right;
+        &:hover{
+            background-color: #ddd;
+            color: orange;
+        }
+        &.active{
+            background-color: black;
+            color: white;
+        }
+        
+    }
+    .no-news{
+        margin: 0 auto;
+        /* justify-content: center; */
+        align-self: center;
+        /* top: 50%; */
+        position: relative;
+        /* left: 37%; */
+        transform: translate(35%, 50%);
+        overflow: hidden;
+    }
+   
+  }
+  @media (max-width: 520px) { 
+    .header { 
+        span,a,form{
+            float: left;
+            overflow-y: scroll;
+        }
+        height: 5rem;
+        overflow-y: scroll;
+        overflow: unset;
+        // display: block;
+        margin: unset;
+        // apply other styles to
+        // span:nth-of-type(1){
+        //     // position: absolute;
+        //     // width:20%;
+        //     // float: left;
+        // }
+        // span:nth-of-type(2){
+        //     position: relative;
+        // }
+        // input{
+        //     width: 80%;
+        // }
+        // button{
+        //     width: 20%;
+        // }
+        // a{
+        //     width:50%;
+        // }
+    }
+}
