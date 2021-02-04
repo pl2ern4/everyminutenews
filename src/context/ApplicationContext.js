@@ -45,15 +45,17 @@ const ApplicationContext = ({children})=>{
     },[]);
 
     useEffect(()=>{
-        debugger;
         let urlParameters = Object.entries(state.filter).map(e => {
             if(typeof e[1] ==="object"){
                 return `${e[0]}=${encodeURIComponent(getDateFormat(new Date(e[1])   ))}`
             }
             return `${e[0]}=${e[1]}`;
         }).join('&');
+        if(state.searchText){
+            urlParameters+=`&q=${encodeURIComponent(state.searchText)}`
+        }
         getNews(`${state.country}&${urlParameters}`);
-    },[state.country, state.activeLink, state.filter]);
+    },[state.country, state.searchText, state.activeLink, state.filter]);
 
     return (
         <ApplicationState.Provider value={state}>

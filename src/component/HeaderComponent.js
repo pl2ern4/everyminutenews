@@ -3,10 +3,9 @@ import {ApplicationState, ApplicationDispatch} from 'src/context/ApplicationCont
 import {TOPSTORIES, ALLSTORIES} from "src/utility/constant"
  
 import countryList from 'src/utility/countrylist.json';
-import {fetchData} from 'src/utility/service'
 
 const HeaderComponent = () => {
-    const {activeLink, date, country} = useContext(ApplicationState);
+    const {activeLink, date} = useContext(ApplicationState);
     const dispatch = useContext(ApplicationDispatch);
     const searchRef = useRef();
 
@@ -32,8 +31,7 @@ const HeaderComponent = () => {
     const handleSubmit = e =>{
         const value = e.target["search"].value;
         dispatch({type:"updateText", value});
-        fetchData(`${activeLink}?country=${country}&q=${encodeURIComponent(value)}`)
-        .then(res=>dispatch({type:"updateNews",value:{...res}}));
+        // dispatch({type:"updateNews", value:{}})
         e.preventDefault();
     }
 
