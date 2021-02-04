@@ -31,7 +31,6 @@ const HeaderComponent = () => {
     const handleSubmit = e =>{
         const value = e.target["search"].value;
         dispatch({type:"updateText", value});
-        // dispatch({type:"updateNews", value:{}})
         e.preventDefault();
     }
 
