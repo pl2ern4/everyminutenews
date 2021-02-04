@@ -28,11 +28,17 @@ $today-bg-color: #fff9c4;
     }
 }
 
+@media all and (device-width: 768px) and (device-height: 1024px) {
+    .content{
+        top:10%!important;
+    }
+}
+
 .content{
     position: fixed;
     height: calc(100% - 20vmin);
     overflow-y: auto;
-    top: 10%;
+    top: 35%;
     margin-left: 1rem;
     .filter{
         width: 100%;
